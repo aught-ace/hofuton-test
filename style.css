@@ -1,0 +1,157 @@
+main {
+    block-size: 100svmin;
+    inline-size: 100svmin;
+    font-size: calc(100svmin / 16);
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    margin: auto;
+}
+
+h1 {
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end:   17;
+    grid-row-start:    2;
+    grid-row-end:      3;
+    font-feature-settings: "fwid", "fnum";
+}
+
+#hp-label {
+    background-color: #000;
+    color: #CCC;
+    text-align: center;
+    grid-column-start: 9;
+    grid-column-end:   11;
+    grid-row-start:    10;
+    grid-row-end:      11;
+    font-feature-settings: "fwid", "fnum";
+}
+
+#hp {
+    background-color: #000;
+    color: #CCC;
+    block-size: 1em;
+    grid-column-start: 2;
+    grid-column-end:   9;
+    grid-row-start:    10;
+    grid-row-end:      11;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(1000, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+#hp-sub-gage {
+    background-color: #666;
+    color: #000;
+    grid-row-start:    1;
+    grid-row-end:      2;
+}
+
+#hp-main-gage {
+    background-color: #CCC;
+    color: #000;
+    grid-row-start:    1;
+    grid-row-end:      2;
+}
+
+#percent {
+    background-color: #000;
+    color: #FFF;
+    text-align: end;
+    grid-column-start: 12;
+    grid-column-end:   15;
+    grid-row-start:    10;
+    grid-row-end:      11;
+    font-feature-settings: "fwid", "fnum";
+}
+
+#percent-label {
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+    grid-column-start: 15;
+    grid-column-end:   16;
+    grid-row-start:    10;
+    grid-row-end:      11;
+    font-feature-settings: "fwid", "fnum";
+}
+
+#message {
+    background-color: #000;
+    color: #CCC;
+    border: solid 0.06125em;
+    padding: calc(0.5em - 0.06125em);
+    grid-column-start: 2;
+    grid-column-end:   16;
+    grid-row-start:    6;
+    grid-row-end:      9;
+    font-feature-settings: "fwid", "fnum";
+    word-break: break-all;
+}
+
+#taeru {
+    background-color: #999;
+    color: #000;
+    border-radius: 2em;
+    padding: 1em;
+    grid-column-start: 2;
+    grid-column-end:   8;
+    grid-row-start:    12;
+    grid-row-end:      16;
+}
+
+#ukenagasu {
+    background-color: #FFF;
+    color: #000;
+    border-radius: 2em;
+    padding: 1em;
+    grid-column-start: 10;
+    grid-column-end:   16;
+    grid-row-start:    12;
+    grid-row-end:      16;
+}
+
+#taeru.down {
+    background-color: #333;
+    color: #FFF;
+}
+
+#ukenagasu.down {
+    background-color: #666;
+    color: #FFF;
+}
+
+/* 全体 */
+body {
+    background-color: #000;
+    color: #FFF;
+    inline-size: 100%;
+    block-size: 100%;
+    overflow: hidden;
+}
+:root {
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    inline-size: 100%;
+    block-size: 100%;
+    overflow: hidden;
+}
+
+* {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    border-style: none;
+    font-weight: normal;
+    font-family: sans-serif;
+    font-size: 1em;
+    line-height: 1em;
+    word-spacing: 0;
+    box-sizing: border-box;
+    touch-action: manipulation;
+    outline: none;
+}
